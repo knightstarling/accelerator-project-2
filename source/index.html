@@ -69,36 +69,83 @@
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Организация походов в горы</h1>
 
-        <div class="hero__container container">
-          <div class="hero__swiper">
-            <ul class="hero__list">
-              <li class="hero__item">
-                <h2 class="hero__item-title">Захватывающие вершины Кавказа</h2>
-                <p class="hero__description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                <a href="" class="hero__button">Смотреть тур</a>
-                <div class="hero__details">
-                  <p class="hero__info hero__info--duration">6 дней/5 ночей</p>
-                  <p class="hero__info hero__info--difficulty">Высокая сложность</p>
+        <div class="hero__container">
+          <div class="swiper swiper__hero">
+            <ul class="swiper-wrapper hero__list">
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-container hero__slide-container--caucasus">
+                  <picture class="hero__picture">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-1-desktop@1x.webp 1x, img/hero/hero-1-desktop@2x.webp 2x" width="1440" height="800" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-1-tablet@1x.webp 1x, img/hero/hero-1-tablet@2x.webp 2x" width="768" height="1034" type="image/webp">
+                    <source srcset="img/hero/hero-1-mobile@1x.webp 1x, img/hero/hero-1-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-1-desktop@1x.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-1-tablet@1x.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
+                    <img class="hero__image" src="img/hero/hero-1-mobile@1x.jpg" srcset="img/hero/hero-1-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                  </picture>
+
+                  <div class="hero__content-wrapper container">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                    <a class="hero__button" href="#">Смотреть тур</a>
+                    <div class="hero__details">
+                      <p class="hero__info hero__info--duration">6 дней/5 ночей</p>
+                      <p class="hero__info hero__info--difficulty">Высокая сложность</p>
+                    </div>
+                  </div>
                 </div>
               </li>
 
-              <li class="hero__item">
-                <h2 class="hero__item-title">Невероятная природа Камчатки</h2>
-                <p class="hero__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                <a href="" class="hero__button">Смотреть тур</a>
-                <div class="hero__details">
-                  <p class="hero__info hero__info--duration">9 дней/10 ночей</p>
-                  <p class="hero__info hero__info--difficulty">Средняя сложность</p>
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-container hero__slide-container--kamchatka">
+                  <picture class="hero__picture">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-2-desktop@1x.webp 1x, img/hero/hero-2-desktop@2x.webp 2x" width="1440" height="800" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-2-tablet@1x.webp 1x, img/hero/hero-2-tablet@2x.webp 2x" width="768" height="1034" type="image/webp">
+                    <source srcset="img/hero/hero-2-mobile@1x.webp 1x, img/hero/hero-2-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-2-desktop@1x.jpg 1x, img/hero/hero-2-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-2-tablet@1x.jpg 1x, img/hero/hero-2-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
+                    <img class="hero__image" src="img/hero/hero-2-mobile@1x.jpg" srcset="img/hero/hero-2-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                  </picture>
+
+                  <div class="hero__content-wrapper container hero__content-wrapper--kamchatka">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                    <a class="hero__button" href="#">Смотреть тур</a>
+
+                    <!-- <picture class="hero__cards-picture">
+                      <source media="(min-width:1440px)" srcset="img/hero-cards-desktop@1x.webp 1x, img/hero-cards-desktop@2x.webp 2x" width="410" height="459" type="image/webp">
+                      <source srcset="img/hero-cards-tablet@1x.webp 1x, img/hero-cards-tablet@2x.webp 2x" width="442" height="365" type="image/webp">
+                      <source media="(min-width:1440px)" srcset="img/hero-cards-desktop@1x.png 1x, img/hero-cards-desktop@2x.png 2x" width="410" height="459" type="image/png">
+                      <img class="hero__cards-image" src="img/hero-cards-tablet@1x.png" srcset="img/hero-cards-tablet@2x.png 2x" width="442" height="365" alt="Фотокарточки с пейзажами на Камчатских горах." loading="lazy">
+                    </picture> -->
+
+                    <div class="hero__details">
+                      <p class="hero__info hero__info--duration">9 дней/10 ночей</p>
+                      <p class="hero__info hero__info--difficulty">Средняя сложность</p>
+                    </div>
+                  </div>
                 </div>
               </li>
 
-              <li class="hero__item">
-                <h2 class="hero__item-title">Магические пейзажи Алтайского Края</h2>
-                <p class="hero__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                <a href="" class="hero__button">Смотреть тур</a>
-                <div class="hero__details">
-                  <p class="hero__info hero__info--duration">8 дней/7 ночей</p>
-                  <p class="hero__info hero__info--difficulty">Лёгкая сложность</p>
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-container hero__slide-container--altai">
+                  <picture class="hero__picture">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-3-desktop@1x.webp 1x, img/hero/hero-3-desktop@2x.webp 2x" width="1440" height="800" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-3-tablet@1x.webp 1x, img/hero/hero-3-tablet@2x.webp 2x" width="768" height="1034" type="image/webp">
+                    <source srcset="img/hero/hero-3-mobile@1x.webp 1x, img/hero/hero-3-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/hero/hero-3-desktop@1x.jpg 1x, img/hero/hero-3-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/hero/hero-3-tablet@1x.jpg 1x, img/hero/hero-3-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
+                    <img class="hero__image" src="img/hero/hero-3-mobile@1x.jpg" srcset="img/hero/hero-3-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                  </picture>
+
+                  <div class="hero__content-wrapper container">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                    <a class="hero__button" href="#">Смотреть тур</a>
+                    <div class="hero__details">
+                      <p class="hero__info hero__info--duration">8 дней/7 ночей</p>
+                      <p class="hero__info hero__info--difficulty">Лёгкая сложность</p>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -114,7 +161,7 @@
           <p class="tours__title-shadow">Ближайшие туры</p>
         </div>
 
-        <div class="tours__swiper">
+        <div class="swiper tours__swiper">
           <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
           <button class="swiper-button-next" type="button" aria-label="Следующий слайд."></button>
 
@@ -250,7 +297,7 @@
           <p class="training__description">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           <h2 class="training__subtitle">Наши инструкторы</h2>
 
-          <div class="training__swiper">
+          <div class="swiper training__swiper">
             <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
             <button class="swiper-button-next" type="button" aria-label="Следующий слайд."></button>
 

@@ -4,3 +4,6 @@
 // import 'swiper/css';
 
 import './menu.js';
+import { initHeroSwiper } from './hero-slider.js';
+
+initHeroSwiper();
