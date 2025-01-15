@@ -1,0 +1,36 @@
+.title {
+  position: relative;
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+  }
+}
+
+.title__shadow {
+  position: absolute;
+  top: -14px;
+  left: 0;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 800;
+  color: rgba(45, 56, 63, 0.03);
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // top: -39px;
+    top: -17px;
+    font-size: 55px;
+  }
+}

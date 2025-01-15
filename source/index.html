@@ -395,7 +395,94 @@
     </main>
 
     <footer class="footer" data-test="footer">
+      <section class="contacts">
+        <div class="contacts__container">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title title">
+              Контакты
+              <span class="title__shadow" aria-hidden="true">Контакты</span>
+            </h2>
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
 
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__item-title">Телефон</h3>
+                <a class="contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <h3 class="contacts__item-title">Email</h3>
+                <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item contacts__item--address">
+                <h3 class="contacts__item-title">Адрес</h3>
+                <address class="contacts__address">г. Москва, пр-т Мира, д. 14, офис 101</address>
+              </li>
+            </ul>
+          </div>
+
+          <picture class="contacts__picture">
+            <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="600" height="324" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="768" height="340" type="image/webp">
+            <source srcset="img/contacts/map-mobile.webp 1x, img/contacts/map-mobile@2x.webp 2x" width="320" height="343" type="image/webp">
+            <source media="(min-width: 1440px)" srcset="img/contacts/map-desktop.png 1x, img/contacts/map-desktop@2x.png 2x" width="600" height="324" type="image/png">
+            <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.png 1x, img/contacts/map-tablet@2x.png 2x" width="768" height="340" type="image/png">
+            <img class="contacts__image" src="img/contacts/map-mobile.png" srcset="img/contacts/map-mobile@2x.png 2x" width="320" height="343" alt="Мы на карте.">
+          </picture>
+        </div>
+      </section>
+
+      <div class="footer__bottom">
+        <div class="footer__container container">
+          <a class="footer__logo" href="index.html" aria-label="Вернуться на главную.">
+            <svg class="footer__image" width="142" height="42" role="img" aria-label="Логотип Lifetour.">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Туры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Обучение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="footer__phone" href="tel:+88007253232">8 800 725-32-32</a>
+
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--ok" href="https://ok.ru/htmlacademy" target="_blank">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--reddit" href="https://forum.academy/" target="_blank">
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="js/main.js"></script>
