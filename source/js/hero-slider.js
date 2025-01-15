@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 const initHeroSwiper = () => {
@@ -12,7 +12,7 @@ const initHeroSwiper = () => {
       768: {
         simulateTouch: false
       },
-      1366: {
+      1440: {
         simulateTouch: false
       }
     },

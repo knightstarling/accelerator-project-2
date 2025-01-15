@@ -148,139 +148,217 @@
       </section>
 
       <section class="tours" data-test="tours">
-        <div class="tours__title-wrapper">
-          <h2 class="tours__title">Ближайшие туры</h2>
-          <p class="tours__title-shadow">Ближайшие туры</p>
+        <div class="tours__container container">
+          <h2 class="tours__title title">
+            Ближайшие туры
+            <span class="tours__shadow title__shadow">Ближайшие туры</span>
+          </h2>
+
+          <div class="tours__swiper">
+            <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
+            <button class="swiper-button-next" type="button" aria-label="Следующий слайд."></button>
+
+            <ul class="swiper-wrapper tours__list">
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-container">
+                  <picture class="tours__picture">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-1-desktop@1x.webp 1x, img/tours/tours-1-desktop@2x.webp 2x" width="380" height="416" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-1-tablet@1x.webp 1x, img/tours/tours-1-tablet@2x.webp 2x" width="330" height="416" type="image/webp">
+                    <source srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-1-desktop@1x.jpg 1x, img/tours/tours-1-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
+                    <img class="tours__image" src="img/tours/tours-1-mobile@1x.jpg" srcset="img/tours/tours-1-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                  </picture>
+
+                  <div class="tours__content">
+                    <div class="tours__location-wrapper">
+                      <p class="tours__location">Кавказ</p>
+
+                      <div class="tours__duration">
+                        <span class="tours__count tours__count--days">4 дня</span>
+                        <span class="tours__count tours__count--nights">3 ночи</span>
+                      </div>
+                    </div>
+
+                    <h3 class="tours__item-title">Путешествие вокруг Эльбруса</h3>
+
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title tours__details-title--star">Сложность:</h4>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star"></span>
+                        </div>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Даты набора:</h4>
+                        <p class="tours__details-description">12.06–19.06</p>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Группа:</h4>
+                        <p class="tours__details-description">до 15 чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-container">
+                  <picture class="tours__picture">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-2-desktop@1x.webp 1x, img/tours/tours-2-desktop@2x.webp 2x" width="380" height="416" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-2-tablet@1x.webp 1x, img/tours/tours-2-tablet@2x.webp 2x" width="330" height="416" type="image/webp">
+                    <source srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-2-desktop@1x.jpg 1x, img/tours/tours-2-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
+                    <img class="tours__image" src="img/tours/tours-2-mobile@1x.jpg" srcset="img/tours/tours-2-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                  </picture>
+
+                  <div class="tours__content">
+                    <div class="tours__location-wrapper">
+                      <p class="tours__location">Алтай</p>
+
+                      <div class="tours__duration">
+                        <span class="tours__count tours__count--days">14 дней</span>
+                        <span class="tours__count tours__count--nights">13 ночей</span>
+                      </div>
+                    </div>
+
+                    <h3 class="tours__item-title">Путь к подножию Белухи</h3>
+
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title tours__details-title--star">Сложность:</h4>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star"></span>
+                          <span class="tours__star"></span>
+                        </div>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Даты набора:</h4>
+                        <p class="tours__details-description">14.06–23.06</p>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Группа:</h4>
+                        <p class="tours__details-description">до 25 чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-container">
+                  <picture class="tours__picture">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-3-desktop@1x.webp 1x, img/tours/tours-3-desktop@2x.webp 2x" width="380" height="416" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-3-tablet@1x.webp 1x, img/tours/tours-3-tablet@2x.webp 2x" width="330" height="416" type="image/webp">
+                    <source srcset="img/tours/tours-3-mobile@1x.webp 1x, img/tours/tours-3-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-3-desktop@1x.jpg 1x, img/tours/tours-3-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
+                    <img class="tours__image" src="img/tours/tours-3-mobile@1x.jpg" srcset="img/tours/tours-3-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                  </picture>
+
+                  <div class="tours__content">
+                    <div class="tours__location-wrapper">
+                      <p class="tours__location">Адыгея</p>
+
+                      <div class="tours__duration">
+                        <span class="tours__count tours__count--days">7 дней</span>
+                        <span class="tours__count tours__count--nights">6 ночей</span>
+                      </div>
+                    </div>
+
+                    <h3 class="tours__item-title">Через Фишт к Чёрному морю и обратно</h3>
+
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title tours__details-title--star">Сложность:</h4>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star"></span>
+                        </div>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Даты набора:</h4>
+                        <p class="tours__details-description">15.07–19.07</p>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Группа:</h4>
+                        <p class="tours__details-description">до 22 чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-container">
+                  <picture class="tours__picture">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-4-desktop@1x.webp 1x, img/tours/tours-4-desktop@2x.webp 2x" width="380" height="416" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-4-tablet@1x.webp 1x, img/tours/tours-4-tablet@2x.webp 2x" width="330" height="416" type="image/webp">
+                    <source srcset="img/tours/tours-4-mobile@1x.webp 1x, img/tours/tours-4-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
+                    <source media="(min-width:1440px)" srcset="img/tours/tours-4-desktop@1x.jpg 1x, img/tours/tours-4-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="img/tours/tours-4-tablet@1x.jpg 1x, img/tours/tours-4-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
+                    <img class="tours__image" src="img/tours/tours-4-mobile@1x.jpg" srcset="img/tours/tours-4-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                  </picture>
+
+                  <div class="tours__content">
+                    <div class="tours__location-wrapper">
+                      <p class="tours__location">Урал</p>
+
+                      <div class="tours__duration">
+                        <span class="tours__count tours__count--days">9 дней</span>
+                        <span class="tours__count tours__count--nights">10 ночей</span>
+                      </div>
+                    </div>
+
+                    <h3 class="tours__item-title">Восхождение Манарага</h3>
+
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title tours__details-title--star">Сложность:</h4>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                          <span class="tours__star tours__star--filled"></span>
+                        </div>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Даты набора:</h4>
+                        <p class="tours__details-description">12.07–19.07</p>
+                      </li>
+
+                      <li class="tours__details-item">
+                        <h4 class="tours__details-title">Группа:</h4>
+                        <p class="tours__details-description">до 7 чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <a class="tours__link" href="#">Показать все туры</a>
         </div>
-
-        <div class="swiper tours__swiper">
-          <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
-          <button class="swiper-button-next" type="button" aria-label="Следующий слайд."></button>
-
-          <ul class="swiper-wrapper tours__list">
-            <li class="tours__item">
-              <div class="tours__location-wrapper">
-                <p class="tours__location">Кавказ</p>
-
-                <div class="tours__duration">
-                  <span class="tours__days">4 дня</span>
-                  <span class="tours__nights">3 ночи</span>
-                </div>
-              </div>
-
-              <h3 class="tours__item-title">Путешествие вокруг Эльбруса</h3>
-
-              <ul class="tours__details-list">
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Сложность:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Даты набора:</h4>
-                  <p class="tours__details-description">12.06–19.06</p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Группа:</h4>
-                  <p class="tours__details-description">до 15 чел.</p>
-                </li>
-              </ul>
-            </li>
-
-            <li class="tours__item">
-              <div class="tours__location-wrapper">
-                <p class="tours__location">Алтай</p>
-
-                <div class="tours__duration">
-                  <span class="tours__days">14 дней</span>
-                  <span class="tours__nights">13 ночей</span>
-                </div>
-              </div>
-
-              <h3 class="tours__item-title">Путь к подножию Белухи</h3>
-
-              <ul class="tours__details-list">
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Сложность:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Даты набора:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Группа:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-              </ul>
-            </li>
-
-            <li class="tours__item">
-              <div class="tours__location-wrapper">
-                <p class="tours__location">Адыгея</p>
-
-                <div class="tours__duration">
-                  <span class="tours__days">7 дней</span>
-                  <span class="tours__nights">6 ночей</span>
-                </div>
-              </div>
-
-              <h3 class="tours__item-title">Через Фишт к Чёрному морю и обратно</h3>
-
-              <ul class="tours__details-list">
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Сложность:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Даты набора:</h4>
-                  <p class="tours__details-description">15.07–19.07</p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Группа:</h4>
-                  <p class="tours__details-description">до 22 чел.</p>
-                </li>
-              </ul>
-            </li>
-
-            <li class="tours__item">
-              <div class="tours__location-wrapper">
-                <p class="tours__location"></p>
-
-                <div class="tours__duration">
-                  <span class="tours__days">12 дней</span>
-                  <span class="tours__nights">11 ночей</span>
-                </div>
-              </div>
-
-              <h3 class="tours__item-title"></h3>
-
-              <ul class="tours__details-list">
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Сложность:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Даты набора:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-
-                <li class="tours__details-item">
-                  <h4 class="tours__details-title">Группа:</h4>
-                  <p class="tours__details-description"></p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <a class="tours__link" href="#">Показать все туры</a>
       </section>
 
       <section class="training" data-test="training">

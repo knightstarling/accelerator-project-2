@@ -5,5 +5,7 @@
 
 import './menu.js';
 import { initHeroSwiper } from './hero-slider.js';
+import { initToursSwiper } from './tours-slider.js';
 
 initHeroSwiper();
+initToursSwiper();
