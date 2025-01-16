@@ -1,0 +1,137 @@
+.reviews__container {
+  padding: 38px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 0 40px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 150px 0 87px 105px;
+  }
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+
+.reviews__shadow {
+  left: 15px;
+
+  @media (min-width: $desktop-width) {
+    top: -39px;
+  }
+}
+
+.reviews__swiper {
+  margin-top: 16px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -35px;
+  }
+}
+
+.reviews__list {
+  padding: 15px 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    padding: 15px 25px 20px;
+  }
+}
+
+.reviews__slide-container {
+  max-width: 290px;
+  padding: 19px 20px 16px 19px;
+  border: 1px solid $white;
+  box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 186px 299px;
+    gap: 30px;
+    max-width: 565px;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 258px 352px;
+    max-width: 700px;
+  }
+}
+
+.reviews__image {
+  display: block;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__content p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:last-of-type {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-of-type {
+      margin-top: 4px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
+
+    &:first-of-type {
+      margin-top: -2px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.reviews__author {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.reviews__info {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 300;
+}

@@ -7,6 +7,16 @@
   height: 100%;
 }
 
+.swiper-slide--reviews {
+  @media (min-width: $tablet-width) {
+    max-width: 565px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+  }
+}
+
 .swiper-pagination--hero {
   position: absolute;
   display: flex;
@@ -98,10 +108,18 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+
+    &--reviews {
+      left: 83.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     left: 93.5%;
+
+    &--reviews {
+      left: 85%;
+    }
   }
 }
 

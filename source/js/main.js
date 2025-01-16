@@ -6,6 +6,8 @@
 import './menu.js';
 import { initHeroSwiper } from './hero-slider.js';
 import { initToursSwiper } from './tours-slider.js';
+import { initReviewsSwiper } from './reviews-slider.js';
 
 initHeroSwiper();
 initToursSwiper();
+initReviewsSwiper();
