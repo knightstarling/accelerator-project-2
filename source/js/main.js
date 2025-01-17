@@ -7,9 +7,11 @@ import './menu.js';
 import { initHeroSwiper } from './hero-slider.js';
 import { initToursSwiper } from './tours-slider.js';
 import { initReviewsSwiper } from './reviews-slider.js';
+import { initGallerySwiper } from './gallery-slider.js';
 import { initFormValidation } from './form-validation.js';
 
 initHeroSwiper();
 initToursSwiper();
 initReviewsSwiper();
+initGallerySwiper();
 initFormValidation();
