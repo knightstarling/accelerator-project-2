@@ -557,7 +557,24 @@
       </section>
 
       <section class="form" data-test="form">
+        <div class="form__container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется<br class="form__text-break"> с вами для консультации.</p>
 
+          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__input-wrapper">
+              <span class="visually-hidden">Введите свой телефон</span>
+              <input class="form__input" id="phone" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="form__input-wrapper">
+              <span class="visually-hidden">Введите свой email</span>
+              <input class="form__input" id="email" type="text" name="email" placeholder="Email" required>
+            </label>
+
+            <button class="form__button button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 

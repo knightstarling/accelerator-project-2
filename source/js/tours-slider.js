@@ -28,4 +28,4 @@ const initToursSwiper = () => {
   });
 };
 
-export {initToursSwiper};
+export { initToursSwiper };

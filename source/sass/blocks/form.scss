@@ -1,0 +1,183 @@
+.form {
+  padding: 177px 31px 174px;
+  background-image:
+    image-set(
+      url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-mobile@1x.png") type("image/png") 1x,
+      url("../../img/form/form-mobile@2x.png") type("image/png") 2x,
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 187px 204px 183px;
+    background-image:
+      image-set(
+        url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-tablet@1x.png") type("image/png") 1x,
+        url("../../img/form/form-tablet@2x.png") type("image/png") 2x,
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 296.5px 240px 293px;
+    background-image:
+      image-set(
+        url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-desktop@1x.png") type("image/png") 1x,
+        url("../../img/form/form-desktop@2x.png") type("image/png") 2x,
+      );
+  }
+}
+
+.form__container {
+  max-width: 290px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+  }
+}
+
+.form__container h2 {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 800;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    margin-bottom: 18px;
+  }
+}
+
+.form__container p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.form__text-break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 360px 360px 180px;
+    gap: 30px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 16px 15px 15px;
+  font-size: 16px;
+  line-height: 100%;
+  color: $primary;
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 0px 1px rgba(2, 102, 193, 0.1);
+
+  &::placeholder {
+    color: $primary;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px $blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0px 0px 0px 1px $primary;
+  }
+
+  &:disabled {
+    box-shadow: inset 0px 0px 0px 1px $disabled;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 30px;
+  }
+
+  &--error {
+    box-shadow: inset 0px 0px 0px 1px $error;
+  }
+}
+
+.form__button {
+  padding: 21px 19px 19px;
+  color: $white;
+  background-color: $blue;
+
+  &:hover {
+    color: $active;
+    background-color: $white;
+    box-shadow: inset 0 0 0 1px $active;
+  }
+
+  &:focus-visible {
+    color: $active;
+    background-color: $white;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $active;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $disabled;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 19px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 19px 16px;
+  }
+}

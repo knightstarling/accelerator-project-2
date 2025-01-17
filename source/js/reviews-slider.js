@@ -26,4 +26,4 @@ const initReviewsSwiper = () => {
   });
 };
 
-export {initReviewsSwiper};
+export { initReviewsSwiper };
