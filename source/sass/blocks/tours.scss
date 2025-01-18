@@ -1,14 +1,14 @@
 .tours__container {
   display: flex;
   flex-direction: column;
-  padding: 39px 0 30px;
+  padding: 39px 0 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 30px;
+    padding: 60px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 123px 0 40px;
+    padding: 123px 0 100px;
   }
 }
 
