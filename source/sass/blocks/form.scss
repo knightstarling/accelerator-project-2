@@ -1,5 +1,5 @@
 .form {
-  padding: 177px 31px 174px;
+  padding: 177px 31px 173px;
   background-image:
     image-set(
       url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
@@ -12,7 +12,7 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    padding: 187px 204px 182px;
+    padding: 187px 204px 183px;
     background-image:
       image-set(
         url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,

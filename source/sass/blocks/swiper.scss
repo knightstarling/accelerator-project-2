@@ -1,5 +1,68 @@
 .swiper-wrapper {
   @include reset-list;
+
+  width: 100%;
+  height: 100%;
+
+  // @media (min-width: $tablet-width) {
+  //   &.advantages__list {
+  //     display: grid;
+  //   }
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   &.advantages__list {
+  //     display: inherit;
+  //   }
+  // }
+}
+
+.swiper--advantages {
+  overflow: hidden;
+
+  .swiper-wrapper {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 324px);
+      gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin-left: 305px;
+      gap: 0;
+    }
+  }
+
+  .swiper-slide {
+    @media (min-width: $tablet-width) {
+      max-width: 324px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+      transform: translateX(54.5%);
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 380px;
+    }
+  }
+}
+
+.swiper--advantages .swiper-wrapper .swiper-slide {
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    &:last-child {
+      transform: translateX(54.5%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+  }
 }
 
 .swiper-slide--hero {
@@ -113,6 +176,10 @@
       left: 83.5%;
     }
 
+    &--advantages {
+      display: none;
+    }
+
     &--gallery {
       left: 84%;
     }
@@ -123,6 +190,12 @@
 
     &--reviews {
       left: 85%;
+    }
+
+    &--advantages {
+      display: inline-block;
+      left: 48.5%;
+      transform: translateX(-50%);
     }
 
     &--gallery {
