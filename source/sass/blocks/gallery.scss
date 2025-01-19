@@ -1,7 +1,7 @@
 .gallery__container {
   max-width: 320px;
   margin: 0 auto;
-  padding: 36px 0 3px;
+  padding: 37px 0 3px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 119px 0 3px;
+    padding: 123px 0 3px;
   }
 }
 

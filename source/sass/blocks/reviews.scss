@@ -27,14 +27,14 @@
 }
 
 .reviews__container {
-  padding: 38px 0 0;
+  padding: 37px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 0 20px 30px;
+    padding: 63px 0 38px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 0 67px 105px;
+    padding: 149px 0 67px 105px;
   }
 }
 
@@ -66,7 +66,7 @@
 }
 
 .reviews__list {
-  padding: 15px 15px 20px;
+  padding: 15px 15px 2px;
 
   @media (min-width: $tablet-width) {
     margin-top: 7px;
@@ -80,7 +80,7 @@
 
 .reviews__slide-container {
   max-width: 290px;
-  padding: 19px 20px 16px 19px;
+  padding: 19px 20px 17px 19px;
   background-color: $white;
   border: 1px solid $white;
   box-shadow: 0 0 20px rgba(28, 51, 116, 0.1);

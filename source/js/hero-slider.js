@@ -3,7 +3,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 const initHeroSwiper = () => {
-  new Swiper('.swiper__hero', {
+  new Swiper('.hero__swiper', {
     modules: [ Pagination ],
     spaceBetween: 30,
     simulateTouch: true,

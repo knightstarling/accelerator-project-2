@@ -20,12 +20,6 @@
   </head>
 
   <body class="page__body">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-
     <header class="header" data-test="header">
       <div class="header__container container">
         <a class="header__logo" href="index.html" aria-label="Вернуться на главную.">
@@ -70,7 +64,7 @@
         <h1 class="visually-hidden">Организация походов в горы</h1>
 
         <div class="hero__container">
-          <div class="swiper swiper__hero">
+          <div class="swiper hero__swiper">
             <ul class="swiper-wrapper hero__list">
               <li class="swiper-slide swiper-slide--hero">
                 <div class="hero__slide-container hero__slide-container--caucasus">
@@ -80,7 +74,7 @@
                     <source srcset="img/hero/hero-1-mobile@1x.webp 1x, img/hero/hero-1-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/hero/hero-1-desktop@1x.jpg 1x, img/hero/hero-1-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/hero/hero-1-tablet@1x.jpg 1x, img/hero/hero-1-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
-                    <img class="hero__image" src="img/hero/hero-1-mobile@1x.jpg" srcset="img/hero/hero-1-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                    <img class="hero__image" src="img/hero/hero-1-mobile@1x.jpg" srcset="img/hero/hero-1-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы.">
                   </picture>
 
                   <div class="hero__content-wrapper container">
@@ -103,7 +97,7 @@
                     <source srcset="img/hero/hero-2-mobile@1x.webp 1x, img/hero/hero-2-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/hero/hero-2-desktop@1x.jpg 1x, img/hero/hero-2-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/hero/hero-2-tablet@1x.jpg 1x, img/hero/hero-2-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
-                    <img class="hero__image" src="img/hero/hero-2-mobile@1x.jpg" srcset="img/hero/hero-2-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                    <img class="hero__image" src="img/hero/hero-2-mobile@1x.jpg" srcset="img/hero/hero-2-mobile@2x.jpg 2x" height="568" width="320" alt="Горы Камчатки.">
                   </picture>
 
                   <div class="hero__content-wrapper container hero__content-wrapper--kamchatka">
@@ -126,7 +120,7 @@
                     <source srcset="img/hero/hero-3-mobile@1x.webp 1x, img/hero/hero-3-mobile@2x.webp 2x" height="568" width="320" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/hero/hero-3-desktop@1x.jpg 1x, img/hero/hero-3-desktop@2x.jpg 2x" width="1440" height="800" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/hero/hero-3-tablet@1x.jpg 1x, img/hero/hero-3-tablet@2x.jpg 2x" width="768" height="1034" type="image/jpeg">
-                    <img class="hero__image" src="img/hero/hero-3-mobile@1x.jpg" srcset="img/hero/hero-3-mobile@2x.jpg 2x" height="568" width="320" alt="Кавказские горы." loading="lazy">
+                    <img class="hero__image" src="img/hero/hero-3-mobile@1x.jpg" srcset="img/hero/hero-3-mobile@2x.jpg 2x" height="568" width="320" alt="Алтайские горы.">
                   </picture>
 
                   <div class="hero__content-wrapper container">
@@ -167,7 +161,7 @@
                     <source srcset="img/tours/tours-1-mobile@1x.webp 1x, img/tours/tours-1-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/tours/tours-1-desktop@1x.jpg 1x, img/tours/tours-1-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/tours/tours-1-tablet@1x.jpg 1x, img/tours/tours-1-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
-                    <img class="tours__image" src="img/tours/tours-1-mobile@1x.jpg" srcset="img/tours/tours-1-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                    <img class="tours__image" src="img/tours/tours-1-mobile@1x.jpg" srcset="img/tours/tours-1-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус.">
                   </picture>
 
                   <div class="tours__content">
@@ -216,7 +210,7 @@
                     <source srcset="img/tours/tours-2-mobile@1x.webp 1x, img/tours/tours-2-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/tours/tours-2-desktop@1x.jpg 1x, img/tours/tours-2-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/tours/tours-2-tablet@1x.jpg 1x, img/tours/tours-2-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
-                    <img class="tours__image" src="img/tours/tours-2-mobile@1x.jpg" srcset="img/tours/tours-2-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                    <img class="tours__image" src="img/tours/tours-2-mobile@1x.jpg" srcset="img/tours/tours-2-mobile@2x.jpg 2x" width="290" height="416" alt="Гора Белуха.">
                   </picture>
 
                   <div class="tours__content">
@@ -265,7 +259,7 @@
                     <source srcset="img/tours/tours-3-mobile@1x.webp 1x, img/tours/tours-3-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/tours/tours-3-desktop@1x.jpg 1x, img/tours/tours-3-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/tours/tours-3-tablet@1x.jpg 1x, img/tours/tours-3-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
-                    <img class="tours__image" src="img/tours/tours-3-mobile@1x.jpg" srcset="img/tours/tours-3-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                    <img class="tours__image" src="img/tours/tours-3-mobile@1x.jpg" srcset="img/tours/tours-3-mobile@2x.jpg 2x" width="290" height="416" alt="Гора Фишт.">
                   </picture>
 
                   <div class="tours__content">
@@ -314,7 +308,7 @@
                     <source srcset="img/tours/tours-4-mobile@1x.webp 1x, img/tours/tours-4-mobile@2x.webp 2x" width="290" height="416" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/tours/tours-4-desktop@1x.jpg 1x, img/tours/tours-4-desktop@2x.jpg 2x" width="380" height="416" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/tours/tours-4-tablet@1x.jpg 1x, img/tours/tours-4-tablet@2x.jpg 2x" width="330" height="416" type="image/jpeg">
-                    <img class="tours__image" src="img/tours/tours-4-mobile@1x.jpg" srcset="img/tours/tours-4-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус." loading="lazy">
+                    <img class="tours__image" src="img/tours/tours-4-mobile@1x.jpg" srcset="img/tours/tours-4-mobile@2x.jpg 2x" width="290" height="416" alt="Гора Манарага.">
                   </picture>
 
                   <div class="tours__content">
@@ -365,7 +359,7 @@
         <div class="training__container container">
           <h2 class="training__title title">
             Обучение
-            <span class="training__shadow title__shadow">Отзывы</span>
+            <span class="training__shadow title__shadow">Обучение</span>
           </h2>
           <p>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           <h2 class="training__subtitle title">Наши инструкторы</h2>
@@ -380,7 +374,7 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-1-desktop@1x.webp 1x, img/training/instructor-1-desktop@2x.webp 2x" width="255" height="200" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-1-tablet@1x.webp 1x, img/training/instructor-1-tablet@2x.webp 2x" width="183" height="200" type="image/webp">
-                    <source srcset="img/training/instructor-1-mobile@1x.webp 1x, img/training/instructor-1-mobile@2x.webp 2x" width="260" height="200">
+                    <source srcset="img/training/instructor-1-mobile@1x.webp 1x, img/training/instructor-1-mobile@2x.webp 2x" width="260" height="200" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-1-desktop@1x.jpg 1x, img/training/instructor-1-desktop@2x.jpg 2x" width="255" height="200" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-1-tablet@1x.jpg 1x, img/training/instructor-1-tablet@2x.jpg 2x" width="183" height="200" type="image/jpg">
                     <img class="training__image" src="img/training/instructor-1-mobile@1x.jpg" srcset="img/training/instructor-1-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Александра Прокофьева.">
@@ -397,7 +391,7 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-2-desktop@1x.webp 1x, img/training/instructor-2-desktop@2x.webp 2x" width="255" height="200" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-2-tablet@1x.webp 1x, img/training/instructor-2-tablet@2x.webp 2x" width="183" height="200" type="image/webp">
-                    <source srcset="img/training/instructor-2-mobile@1x.webp 1x, img/training/instructor-2-mobile@2x.webp 2x" width="260" height="200">
+                    <source srcset="img/training/instructor-2-mobile@1x.webp 1x, img/training/instructor-2-mobile@2x.webp 2x" width="260" height="200" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-2-desktop@1x.jpg 1x, img/training/instructor-2-desktop@2x.jpg 2x" width="255" height="200" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-2-tablet@1x.jpg 1x, img/training/instructor-2-tablet@2x.jpg 2x" width="183" height="200" type="image/jpg">
                     <img class="training__image" src="img/training/instructor-2-mobile@1x.jpg" srcset="img/training/instructor-2-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Светланы Афиногеновой.">
@@ -414,7 +408,7 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-3-desktop@1x.webp 1x, img/training/instructor-3-desktop@2x.webp 2x" width="255" height="200" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-3-tablet@1x.webp 1x, img/training/instructor-3-tablet@2x.webp 2x" width="183" height="200" type="image/webp">
-                    <source srcset="img/training/instructor-3-mobile@1x.webp 1x, img/training/instructor-3-mobile@2x.webp 2x" width="260" height="200">
+                    <source srcset="img/training/instructor-3-mobile@1x.webp 1x, img/training/instructor-3-mobile@2x.webp 2x" width="260" height="200" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-3-desktop@1x.jpg 1x, img/training/instructor-3-desktop@2x.jpg 2x" width="255" height="200" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-3-tablet@1x.jpg 1x, img/training/instructor-3-tablet@2x.jpg 2x" width="183" height="200" type="image/jpg">
                     <img class="training__image" src="img/training/instructor-3-mobile@1x.jpg" srcset="img/training/instructor-3-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Надежды Колесниченко.">
@@ -431,10 +425,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-4-desktop@1x.webp 1x, img/training/instructor-4-desktop@2x.webp 2x" width="255" height="200" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-4-tablet@1x.webp 1x, img/training/instructor-4-tablet@2x.webp 2x" width="183" height="200" type="image/webp">
-                    <source srcset="img/training/instructor-4-mobile@1x.webp 1x, img/training/instructor-4-mobile@2x.webp 2x" width="260" height="200">
+                    <source srcset="img/training/instructor-4-mobile@1x.webp 1x, img/training/instructor-4-mobile@2x.webp 2x" width="260" height="200" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-4-desktop@1x.jpg 1x, img/training/instructor-4-desktop@2x.jpg 2x" width="255" height="200" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-4-tablet@1x.jpg 1x, img/training/instructor-4-tablet@2x.jpg 2x" width="183" height="200" type="image/jpg">
-                    <img class="training__image" src="img/training/instructor-4-mobile@1x.jpg" srcset="img/training/instructor-4-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Федора Кайгородова.">
+                    <img class="training__image" src="img/training/instructor-4-mobile@1x.jpg" srcset="img/training/instructor-4-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Фёдора Кайгородова.">
                   </picture>
 
                   <h3>Федор Кайгородов</h3>
@@ -448,10 +442,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-5-desktop@1x.webp 1x, img/training/instructor-5-desktop@2x.webp 2x" width="255" height="200" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-5-tablet@1x.webp 1x, img/training/instructor-5-tablet@2x.webp 2x" width="183" height="200" type="image/webp">
-                    <source srcset="img/training/instructor-5-mobile@1x.webp 1x, img/training/instructor-5-mobile@2x.webp 2x" width="260" height="200">
+                    <source srcset="img/training/instructor-5-mobile@1x.webp 1x, img/training/instructor-5-mobile@2x.webp 2x" width="260" height="200" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/training/instructor-5-desktop@1x.jpg 1x, img/training/instructor-5-desktop@2x.jpg 2x" width="255" height="200" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/training/instructor-5-tablet@1x.jpg 1x, img/training/instructor-5-tablet@2x.jpg 2x" width="183" height="200" type="image/jpg">
-                    <img class="training__image" src="img/training/instructor-5-mobile@1x.jpg" srcset="img/training/instructor-5-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Федора Кайгородова.">
+                    <img class="training__image" src="img/training/instructor-5-mobile@1x.jpg" srcset="img/training/instructor-5-mobile@2x.jpg 2x" width="260" height="200" alt="Фотография Даниэля Васнецова.">
                   </picture>
 
                   <h3>Даниэль Васнецов</h3>
@@ -512,10 +506,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-1-desktop@1x.webp 1x, img/reviews/reviews-1-desktop@2x.webp 2x" width="258" height="253" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-1-tablet@1x.webp 1x, img/reviews/reviews-1-tablet@2x.webp 2x" width="186" height="237" type="image/webp">
-                    <source srcset="img/reviews/review-1-mobile@1x.webp 1x, img/reviews/reviews-1-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
+                    <source srcset="img/reviews/reviews-1-mobile@1x.webp 1x, img/reviews/reviews-1-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-1-desktop@1x.jpg 1x, img/reviews/reviews-1-desktop@2x.jpg 2x" width="258" height="253" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-1-tablet@1x.jpg 1x, img/reviews/reviews-1-tablet@2x.jpg 2x" width="186" height="237" type="image/jpg">
-                    <img class="reviews__image" src="img/reviews/reviews-1-mobile@1x.jpg" srcset="img/reviews/reviews-1-mobile@2x.jpg 2x" width="250" height="169" alt="Фото Фролова Александра.">
+                    <img class="reviews__image" src="img/reviews/reviews-1-mobile@1x.jpg" srcset="img/reviews/reviews-1-mobile@2x.jpg 2x" width="250" height="169" alt="Фотография Фролова Александра.">
                   </picture>
 
                   <div class="reviews__content">
@@ -531,10 +525,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-2-desktop@1x.webp 1x, img/reviews/reviews-2-desktop@2x.webp 2x" width="258" height="253" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-2-tablet@1x.webp 1x, img/reviews/reviews-2-tablet@2x.webp 2x" width="186" height="237" type="image/webp">
-                    <source srcset="img/reviews/review-2-mobile@1x.webp 1x, img/reviews/reviews-2-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
+                    <source srcset="img/reviews/reviews-2-mobile@1x.webp 1x, img/reviews/reviews-2-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-2-desktop@1x.jpg 1x, img/reviews/reviews-2-desktop@2x.jpg 2x" width="258" height="253" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-2-tablet@1x.jpg 1x, img/reviews/reviews-2-tablet@2x.jpg 2x" width="186" height="237" type="image/jpg">
-                    <img class="reviews__image" src="img/reviews/reviews-2-mobile@1x.jpg" srcset="img/reviews/reviews-2-mobile@2x.jpg 2x" width="250" height="169" alt="Фото Ивана Соловьёва.">
+                    <img class="reviews__image" src="img/reviews/reviews-2-mobile@1x.jpg" srcset="img/reviews/reviews-2-mobile@2x.jpg 2x" width="250" height="169" alt="Фотография Ивана Соловьёва.">
                   </picture>
 
                   <div class="reviews__content">
@@ -550,10 +544,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-3-desktop@1x.webp 1x, img/reviews/reviews-3-desktop@2x.webp 2x" width="258" height="253" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-3-tablet@1x.webp 1x, img/reviews/reviews-3-tablet@2x.webp 2x" width="186" height="237" type="image/webp">
-                    <source srcset="img/reviews/review-3-mobile@1x.webp 1x, img/reviews/reviews-3-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
+                    <source srcset="img/reviews/reviews-3-mobile@1x.webp 1x, img/reviews/reviews-3-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-3-desktop@1x.jpg 1x, img/reviews/reviews-3-desktop@2x.jpg 2x" width="258" height="253" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-3-tablet@1x.jpg 1x, img/reviews/reviews-3-tablet@2x.jpg 2x" width="186" height="237" type="image/jpg">
-                    <img class="reviews__image" src="img/reviews/reviews-3-mobile@1x.jpg" srcset="img/reviews/reviews-3-mobile@2x.jpg 2x" width="250" height="169" alt="Фото Евгении Баженовой.">
+                    <img class="reviews__image" src="img/reviews/reviews-3-mobile@1x.jpg" srcset="img/reviews/reviews-3-mobile@2x.jpg 2x" width="250" height="169" alt="Фотография Евгении Баженовой.">
                   </picture>
 
                   <div class="reviews__content">
@@ -569,10 +563,10 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-4-desktop@1x.webp 1x, img/reviews/reviews-4-desktop@2x.webp 2x" width="258" height="253" type="image/webp">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-4-tablet@1x.webp 1x, img/reviews/reviews-4-tablet@2x.webp 2x" width="186" height="237" type="image/webp">
-                    <source srcset="img/reviews/review-4-mobile@1x.webp 1x, img/reviews/reviews-4-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
+                    <source srcset="img/reviews/reviews-4-mobile@1x.webp 1x, img/reviews/reviews-4-mobile@2x.webp 2x" width="250" height="169" type="image/webp">
                     <source media="(min-width: 1440px)" srcset="img/reviews/reviews-4-desktop@1x.jpg 1x, img/reviews/reviews-4-desktop@2x.jpg 2x" width="258" height="253" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/reviews/reviews-4-tablet@1x.jpg 1x, img/reviews/reviews-4-tablet@2x.jpg 2x" width="186" height="237" type="image/jpg">
-                    <img class="reviews__image" src="img/reviews/reviews-4-mobile@1x.jpg" srcset="img/reviews/reviews-4-mobile@2x.jpg 2x" width="250" height="169" alt="Фото Елены Пироговой.">
+                    <img class="reviews__image" src="img/reviews/reviews-4-mobile@1x.jpg" srcset="img/reviews/reviews-4-mobile@2x.jpg 2x" width="250" height="169" alt="Фотография Елены Пироговой.">
                   </picture>
 
                   <div class="reviews__content">
@@ -595,7 +589,7 @@
             <span class="advantages__shadow title__shadow" aria-hidden="true">Преимущества</span>
           </h2>
 
-          <div class="advantages__swiper swiper--advantages">
+          <div class="swiper advantages__swiper swiper--advantages">
             <ul class="swiper-wrapper advantages__list swiper-wrapper--advantages">
               <li class="swiper-slide swiper-slide--advantages">
                 <div class="advantages__slide-container advantages__slide-container--safety">
@@ -657,7 +651,7 @@
                     <source srcset="img/gallery/gallery-1-mobile@1x.webp 1x, img/gallery/gallery-1-mobile@2x.webp 2x" width="158" height="266" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-1-desktop@1x.jpg 1x, img/gallery/gallery-1-desktop@2x.jpg 2x" width="284" height="463" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-1-tablet@1x.jpg 1x, img/gallery/gallery-1-tablet@2x.jpg 2x" width="253" height="418" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-1-mobile@1x.jpg" srcset="img/gallery/gallery-1-mobile@2x.jpg 2x" width="158" height="266" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-1-mobile@1x.jpg" srcset="img/gallery/gallery-1-mobile@2x.jpg 2x" width="158" height="266" alt="Мужчина в спортивной одежде, смотрящий на горный пейзаж.">
                   </picture>
                 </div>
               </li>
@@ -670,7 +664,7 @@
                     <source srcset="img/gallery/gallery-2-mobile@1x.webp 1x, img/gallery/gallery-2-mobile@2x.webp 2x" width="157" height="134" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-2-desktop@1x.jpg 1x, img/gallery/gallery-2-desktop@2x.jpg 2x" width="284" height="233" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-2-tablet@1x.jpg 1x, img/gallery/gallery-2-tablet@2x.jpg 2x" width="252" height="210" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-2-mobile@1x.jpg" srcset="img/gallery/gallery-2-mobile@2x.jpg 2x" width="157" height="134" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-2-mobile@1x.jpg" srcset="img/gallery/gallery-2-mobile@2x.jpg 2x" width="157" height="134" alt="Компания людей у костра.">
                   </picture>
 
                   <picture class="gallery__picture">
@@ -679,7 +673,7 @@
                     <source srcset="img/gallery/gallery-3-mobile@1x.webp 1x, img/gallery/gallery-3-mobile@2x.webp 2x" width="157" height="124" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-3-desktop@1x.jpg 1x, img/gallery/gallery-3-desktop@2x.jpg 2x" width="284" height="223" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-3-tablet@1x.jpg 1x, img/gallery/gallery-3-tablet@2x.jpg 2x" width="252" height="201" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-3-mobile@1x.jpg" srcset="img/gallery/gallery-3-mobile@2x.jpg 2x" width="157" height="124" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-3-mobile@1x.jpg" srcset="img/gallery/gallery-3-mobile@2x.jpg 2x" width="157" height="124" alt="Компас в руке с горной вершиной на заднем фоне.">
                   </picture>
                 </div>
               </li>
@@ -692,7 +686,7 @@
                     <source srcset="img/gallery/gallery-4-mobile@1x.webp 1x, img/gallery/gallery-4-mobile@2x.webp 2x" width="158" height="266" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-4-desktop@1x.jpg 1x, img/gallery/gallery-4-desktop@2x.jpg 2x" width="284" height="463" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-4-tablet@1x.jpg 1x, img/gallery/gallery-4-tablet@2x.jpg 2x" width="253" height="418" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-4-mobile@1x.jpg" srcset="img/gallery/gallery-4-mobile@2x.jpg 2x" width="158" height="266" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-4-mobile@1x.jpg" srcset="img/gallery/gallery-4-mobile@2x.jpg 2x" width="158" height="266" alt="Группа людей, идущая по горе вдоль каната.">
                   </picture>
                 </div>
               </li>
@@ -705,7 +699,7 @@
                     <source srcset="img/gallery/gallery-5-mobile@1x.webp 1x, img/gallery/gallery-5-mobile@2x.webp 2x" width="157" height="134" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-5-desktop@1x.jpg 1x, img/gallery/gallery-5-desktop@2x.jpg 2x" width="284" height="233" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-5-tablet@1x.jpg 1x, img/gallery/gallery-5-tablet@2x.jpg 2x" width="252" height="210" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-5-mobile@1x.jpg" srcset="img/gallery/gallery-5-mobile@2x.jpg 2x" width="157" height="134" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-5-mobile@1x.jpg" srcset="img/gallery/gallery-5-mobile@2x.jpg 2x" width="157" height="134" alt="Группа людей, идущая к горе вдоль снежной впадины с водой.">
                   </picture>
 
                   <picture class="gallery__picture">
@@ -714,7 +708,7 @@
                     <source srcset="img/gallery/gallery-6-mobile@1x.webp 1x, img/gallery/gallery-6-mobile@2x.webp 2x" width="157" height="124" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-6-desktop@1x.jpg 1x, img/gallery/gallery-6-desktop@2x.jpg 2x" width="284" height="223" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-6-tablet@1x.jpg 1x, img/gallery/gallery-6-tablet@2x.jpg 2x" width="252" height="201" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-6-mobile@1x.jpg" srcset="img/gallery/gallery-6-mobile@2x.jpg 2x" width="157" height="124" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-6-mobile@1x.jpg" srcset="img/gallery/gallery-6-mobile@2x.jpg 2x" width="157" height="124" alt="Синяя палатка на фоне звёздного неба.">
                   </picture>
                 </div>
               </li>
@@ -727,7 +721,7 @@
                     <source srcset="img/gallery/gallery-7-mobile@1x.webp 1x, img/gallery/gallery-7-mobile@2x.webp 2x" width="158" height="266" type="image/webp">
                     <source media="(min-width:1440px)" srcset="img/gallery/gallery-7-desktop@1x.jpg 1x, img/gallery/gallery-7-desktop@2x.jpg 2x" width="284" height="463" type="image/jpg">
                     <source media="(min-width: 768px)" srcset="img/gallery/gallery-7-tablet@1x.jpg 1x, img/gallery/gallery-7-tablet@2x.jpg 2x" width="253" height="418" type="image/jpg">
-                    <img class="gallery__image" src="img/gallery/gallery-7-mobile@1x.jpg" srcset="img/gallery/gallery-7-mobile@2x.jpg 2x" width="158" height="266" alt="Эльбрус." loading="lazy">
+                    <img class="gallery__image" src="img/gallery/gallery-7-mobile@1x.jpg" srcset="img/gallery/gallery-7-mobile@2x.jpg 2x" width="158" height="266" alt="Двое мужчин в лесистой местности у реки.">
                   </picture>
                 </div>
               </li>
@@ -752,7 +746,6 @@
             </label>
 
             <button class="form__button button" type="submit">Отправить</button>
-            </div>
           </form>
         </div>
       </section>
@@ -828,17 +821,17 @@
 
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">VK</span>
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--ok" href="https://ok.ru/htmlacademy" target="_blank">
+              <a class="footer__social-link footer__social-link--ok" href="https://ok.ru/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Одноклассники</span>
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--reddit" href="https://forum.academy/" target="_blank">
+              <a class="footer__social-link footer__social-link--reddit" href="https://forum.academy/" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Reddit</span>
               </a>
             </li>

@@ -27,7 +27,7 @@
       max-width: 324px;
     }
 
-    @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    @media (min-width: $tablet-width) and (width <= calc($desktop-width - 1px)) {
       transform: translateX(54.5%);
     }
 
@@ -42,7 +42,7 @@
     max-width: 324px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media (min-width: $tablet-width) and (width <= calc($desktop-width - 1px)) {
     &:last-child {
       transform: translateX(54.5%);
     }
