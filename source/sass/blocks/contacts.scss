@@ -138,10 +138,25 @@
 }
 
 .contacts__link {
+  align-self: flex-start;
   font-size: 14px;
   line-height: 20px;
   color: $primary;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    color: $blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 
   @media (min-width: $tablet-width) {
     line-height: 22px;

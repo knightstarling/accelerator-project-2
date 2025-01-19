@@ -4,7 +4,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lifetour — организация походов в горы.">
     <title>Lifetour</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/favicon-192.png">
+    <link rel="preload" href="fonts/montserrat-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -14,21 +25,10 @@
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div>header</div>
-    <div>hero</div>
-    <div>tours</div>
-    <div>training</div>
-    <div>about</div>
-    <div>reviews</div>
-    <div>adv</div>
-    <div>gallery</div>
-    <div>form</div>
-    <div>footer</div> -->
 
     <header class="header" data-test="header">
       <div class="header__container container">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html" aria-label="Вернуться на главную.">
           <svg class="header__image" width="142" height="42" role="img" aria-label="Логотип Lifetour.">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
@@ -86,7 +86,7 @@
                   <div class="hero__content-wrapper container">
                     <h2>Захватывающие вершины Кавказа</h2>
                     <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                    <a class="hero__button" href="#">Смотреть тур</a>
+                    <a class="hero__button" href="#" tabindex="0">Смотреть тур</a>
                     <div class="hero__details">
                       <p class="hero__info hero__info--duration">6 дней/5 ночей</p>
                       <p class="hero__info hero__info--difficulty">Высокая сложность</p>
@@ -109,7 +109,7 @@
                   <div class="hero__content-wrapper container hero__content-wrapper--kamchatka">
                     <h2>Невероятная природа Камчатки</h2>
                     <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                    <a class="hero__button" href="#">Смотреть тур</a>
+                    <a class="hero__button" href="#" tabindex="0">Смотреть тур</a>
                     <div class="hero__details">
                       <p class="hero__info hero__info--duration">9 дней/10 ночей</p>
                       <p class="hero__info hero__info--difficulty">Средняя сложность</p>
@@ -132,7 +132,7 @@
                   <div class="hero__content-wrapper container">
                     <h2>Магические пейзажи Алтайского Края</h2>
                     <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                    <a class="hero__button" href="#">Смотреть тур</a>
+                    <a class="hero__button" href="#" tabindex="0">Смотреть тур</a>
                     <div class="hero__details">
                       <p class="hero__info hero__info--duration">8 дней/7 ночей</p>
                       <p class="hero__info hero__info--difficulty">Лёгкая сложность</p>
@@ -848,6 +848,8 @@
         </div>
       </div>
     </footer>
+
+    <div class="page__overlay"></div>
 
     <script type="module" src="js/main.js"></script>
   </body>

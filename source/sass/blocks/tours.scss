@@ -192,6 +192,31 @@
     mask-position: center;
   }
 
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 0.1);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $blue;
+
+    &::after {
+      background-color: $blue;
+    }
+  }
+
+  &:active {
+    color: $active;
+
+    &::after {
+      background-color: $active;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 26px;
     font-size: 16px;

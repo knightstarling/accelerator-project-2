@@ -1,6 +1,7 @@
 .header {
   position: relative;
   background-color: $blue;
+  z-index: 2;
 }
 
 .header__container {
@@ -27,6 +28,15 @@
 .header__logo {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 10px 31px 10px 32px;
@@ -102,6 +112,20 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    box-shadow: 0 1px 0 0 $white;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px $white;
+  }
+
+  &:active {
+    color: $active;
+    box-shadow: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
@@ -122,6 +146,19 @@
   font-weight: 600;
   color: $white;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus-visible {
+    color: $primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 3;

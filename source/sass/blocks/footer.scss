@@ -32,6 +32,14 @@
 .footer__logo {
   display: block;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 9px 29px;
   }
@@ -99,6 +107,20 @@
   text-align: center;
   text-decoration: none;
 
+  &:hover {
+    box-shadow: 0 1px 0 0 $primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px $primary;
+  }
+
+  &:active {
+    color: $blue;
+    box-shadow: none;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 16px;
   }
@@ -106,6 +128,19 @@
 
 .footer__phone {
   display: none;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus-visible {
+    color: $blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
@@ -209,6 +244,19 @@
   font-weight: 300;
   color: $primary;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    color: $blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
